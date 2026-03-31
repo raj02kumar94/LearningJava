@@ -4,13 +4,75 @@ import java.util.Arrays;
 
 public class Learnings implements TestInter{
 
+
+
+
+
+//    Instance variable will be declared inside the class and outside the method. We can access this method anywhere in the same class
+
+    int data = 11;
+
+//    Local variable will be declared inside the method and we can access this inside the method alone we cannot access it outside the method or class.
+
+    public void testData1(){
+
+        int checkData = 12;
+
+        System.out.println(checkData + " is local variable");
+
+        System.out.println(data + " is instance variable");
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //    private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(Learnings.class);
 
-    static void main() {
-
+    public void tests(){
         LearningFinalLogic logic = new LearningFinalLogic();
 
         logic.testFinal();
+
+        logic.data=12;
+
+    }
+
+    static void main() {
+
+
 
 
 //        int[] arr = {1001,1002,1003,1005};

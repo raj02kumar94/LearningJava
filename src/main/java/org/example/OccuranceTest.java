@@ -22,13 +22,11 @@ public class OccuranceTest {
     public static void countOccurrence() {
         for(int i=0; i<originalString.length()-1; i++){
             if(hMap.containsKey(originalString.charAt(i))){
-
                 int count = hMap.get(originalString.charAt(i));
-
                 hMap.put(originalString.charAt(i), count+1);
-            }else{
 
-                hMap.put((originalString.charAt(i)), 1);
+            }else{
+                hMap.put(originalString.charAt(i), 1);
             }
         }
         System.out.print(hMap);
