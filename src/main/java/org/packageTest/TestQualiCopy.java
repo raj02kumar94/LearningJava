@@ -1,6 +1,6 @@
 package org.packageTest;
 
-public class TestQuali {
+public class TestQualiCopy {
 
 
     static void main() {

@@ -3,7 +3,15 @@ package org.example;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TestStatic {
+public class TestStatic  extends TestAbstract{
+
+
+    @Override
+    void testMethod() {
+        System.out.println("");
+    }
+
+
 
     static void main() {
         String input = "Wipro";
@@ -32,9 +40,16 @@ public class TestStatic {
 //
 //        }
 
+
     }
 
 
 
 
+}
+
+
+class FirstTest {
+
+    TestStatic tsa = new TestStatic();
 }

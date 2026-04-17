@@ -5,7 +5,7 @@ import java.util.*;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    static void main() {
+    public static void main(String[] args) {
 
 //        System.out.println("Try programiz.pro");
 //
@@ -112,6 +112,15 @@ public class Main {
         }
 
 
-    }
+        // Calling method from TestAbstract
+        class SubTest extends TestAbstract {
+            void testMethod() {
+                System.out.println("Abstract method implemented");
+            }
+        }
 
+        SubTest obj = new SubTest();
+        obj.testMethod1();
+
+    }
 }

@@ -19,7 +19,7 @@ public class StringProgms {
         int firstLargest =0;
         for(int k=0;k<arr.length; k++){
 
-            for(int p=k; p< arr.length; p++){
+            for(int p=k+1; p< arr.length; p++){
 
                 if(arr[k]<arr[p]){
 
@@ -66,8 +66,32 @@ public class StringProgms {
         System.out.println(stringBuilder.toString());
 
 
+        String text = "ab12cd34ef56";
+
+        String text1 = text.replaceAll("[^0-9]", "");
+        System.out.println(text1);
+
+        StringBuilder sb = new StringBuilder(text1);
+
+
+
+//        for(int i=0; i<text1.length()-2;i++){
+
+        for(char num : text1.toCharArray()){
+            int j=0;
+            int i=2;
+            System.out.print("Sum("+text1.substring(j,i) +",");
+           i= i+2;
+           j= j+2;
+//            System.out.println(text1.substring(j,i) +") = " + (Integer.parseInt(text1.substring(j-2, j)) + Integer.parseInt(text1.substring(j, i))));
+
+//             int sum = Integer.parseInt(text1.substring(i, i+2)) + Integer.parseInt(text1.substring(i+1, i+3));");
+
+        }
 
     }
+
+
 
 
 

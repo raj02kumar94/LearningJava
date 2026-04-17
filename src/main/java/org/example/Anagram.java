@@ -1,6 +1,6 @@
 package org.example;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class Anagram {
 
@@ -29,6 +29,26 @@ public class Anagram {
 
             System.out.println(strA+" not equal "+strB);
         }
+
+        Map<String, Integer> hMap = new LinkedHashMap<>();
+
+        hMap.put("David",95);
+        hMap.put("Jane",80);
+        hMap.put("Mary",97);
+        hMap.put("Lisa",78);
+        hMap.put("Dino",65);
+
+        System.out.println(hMap);
+
+        List<Map.Entry<String, Integer>> entryList = new ArrayList<>(hMap.entrySet());
+        entryList.sort((a,b)-> b.getValue().compareTo(a.getValue()));
+
+
+        for(Map.Entry<String, Integer> entry: entryList){
+
+            System.out.println(entry.getKey() + ": "+ entry.getValue());
+        }
+
 
     }
 }
